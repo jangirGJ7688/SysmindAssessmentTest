@@ -1,0 +1,51 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+*.moved-aside
+
+# SwiftPM
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+project.xcworkspace/
+
+# Carthage
+Carthage/
+Carthage/Build/
+
+# Xcode Server
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# Temporary files
+*.DS_Store
+*.swp
+*.lock
+*.orig
+
+# Crashlytics
+crashlytics-build.properties
+
+# Archives
+*.xcarchive
+
+# Asset catalog compiled files
+*.car
+
+# Simulator logs
+*.simruntime
+
+# Realm specific (if needed)
+realm-object-server/
+*.realm.*
