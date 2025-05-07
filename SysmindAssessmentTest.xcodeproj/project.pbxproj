@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D8F675C0C4A4B0BC33E11174 /* Pods_SysmindAssessmentTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BE983E4F5B1B187D5E5B8D /* Pods_SysmindAssessmentTest.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		54B34AF48FC670BE28498CA2 /* Pods-SysmindAssessmentTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysmindAssessmentTest.release.xcconfig"; path = "Target Support Files/Pods-SysmindAssessmentTest/Pods-SysmindAssessmentTest.release.xcconfig"; sourceTree = "<group>"; };
+		729CDE6FC511C6AF3A0B3864 /* Pods-SysmindAssessmentTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysmindAssessmentTest.debug.xcconfig"; path = "Target Support Files/Pods-SysmindAssessmentTest/Pods-SysmindAssessmentTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B4E73B452DCBD45E00891FFC /* SysmindAssessmentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysmindAssessmentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BE983E4F5B1B187D5E5B8D /* Pods_SysmindAssessmentTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SysmindAssessmentTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F675C0C4A4B0BC33E11174 /* Pods_SysmindAssessmentTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2044C4CF6FA63FD4F0FFE098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE983E4F5B1B187D5E5B8D /* Pods_SysmindAssessmentTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4E73B3C2DCBD45E00891FFC = {
 			isa = PBXGroup;
 			children = (
 				B4E73B472DCBD45E00891FFC /* SysmindAssessmentTest */,
 				B4E73B462DCBD45E00891FFC /* Products */,
+				CFAE2D9723202F555E298F68 /* Pods */,
+				2044C4CF6FA63FD4F0FFE098 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CFAE2D9723202F555E298F68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				729CDE6FC511C6AF3A0B3864 /* Pods-SysmindAssessmentTest.debug.xcconfig */,
+				54B34AF48FC670BE28498CA2 /* Pods-SysmindAssessmentTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4E73B582DCBD46000891FFC /* Build configuration list for PBXNativeTarget "SysmindAssessmentTest" */;
 			buildPhases = (
+				DDBA1278F07391963DB4D8FF /* [CP] Check Pods Manifest.lock */,
 				B4E73B412DCBD45E00891FFC /* Sources */,
 				B4E73B422DCBD45E00891FFC /* Frameworks */,
 				B4E73B432DCBD45E00891FFC /* Resources */,
+				0A486CEB6C3A59FDA5B993E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				B4E73B472DCBD45E00891FFC /* SysmindAssessmentTest */,
 			);
 			name = SysmindAssessmentTest;
-			packageProductDependencies = (
-			);
 			productName = SysmindAssessmentTest;
 			productReference = B4E73B452DCBD45E00891FFC /* SysmindAssessmentTest.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A486CEB6C3A59FDA5B993E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SysmindAssessmentTest/Pods-SysmindAssessmentTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SysmindAssessmentTest/Pods-SysmindAssessmentTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SysmindAssessmentTest/Pods-SysmindAssessmentTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBA1278F07391963DB4D8FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SysmindAssessmentTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4E73B412DCBD45E00891FFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +209,7 @@
 /* Begin XCBuildConfiguration section */
 		B4E73B592DCBD46000891FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729CDE6FC511C6AF3A0B3864 /* Pods-SysmindAssessmentTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -153,6 +223,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,6 +239,7 @@
 		};
 		B4E73B5A2DCBD46000891FFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B34AF48FC670BE28498CA2 /* Pods-SysmindAssessmentTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -181,6 +253,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -232,7 +305,7 @@
 				DEVELOPMENT_TEAM = XGXCL6K64U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -247,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -296,7 +369,7 @@
 				DEVELOPMENT_TEAM = XGXCL6K64U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -305,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
